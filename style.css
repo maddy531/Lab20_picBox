@@ -1,0 +1,192 @@
+body, h1{
+  background-color: #393434;
+  color: #F8F7F7;
+  font: 25px/1 Helvetica, Verdana, sans-.serif;
+  text-transform: uppercase;
+
+
+}
+
+a:link{
+  color:blue;
+}
+
+a:visited{
+  color: blue;
+}
+
+a:hover{
+  text-decoration: none;
+  color: blue;
+}
+
+ul {
+  list-style: none;
+  margin: 0px auto;
+  padding: 1em;
+  display: block;
+  text-align: center;
+}
+
+#title h1{
+  text-align: center;
+  border: .1em solid #DED6DB;
+  padding: .25em .5em;
+  margin: 0 auto;
+  width:8em;
+}
+  #title{
+  text-align: center;
+
+}
+/*nav*/
+
+.nav {
+  margin: 10px;
+  text-align: center;
+  display: flex;
+
+}
+
+.nav ul {
+  overflow: auto;
+  list-style-type: none;
+}
+
+.nav li {
+  height: 25px;
+  margin-right: 0px;
+  float: left;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+.nav li:last-child {
+  border-right: none;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #DED6DB;
+  font: 25px/1 Helvetica, Verdana, sans-.serif;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav li a:hover {
+  color: #9C6868;
+}
+
+.nav li.active a {
+  font-weight: bold;
+  color: blue;
+}
+/*Nav*/
+
+/* html needs to be added*/
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+/*gallery*/
+
+.container{
+  width: 100%;
+  border-radius: .5em;
+  opacity: .88;
+  background-color: #DED6DB;
+  height: auto;
+}
+
+.content{
+  padding: 3em;
+}
+.gallery {
+  width: 100%;
+  border-radius: .5em;
+  opacity: .88;
+  background-color: #DED6DB;
+  height: auto;
+}
+
+
+@media screen and (max-width: 1180px) {
+
+    .row{
+      margin: 15px 0 auto;
+      text-align: center;
+      background-color: #9C6868;
+  }
+  .gallery{
+    background-color: #9C6868;
+  }
+
+}
+@media screen and (max-width: 880px) {
+
+    .row{
+      margin: 15px 0 auto;
+      text-align: center;
+      background-color: #CE9794;
+  }
+  .gallery{
+    background-color: #CE9794;
+  }
+
+}
+
+
+.row{
+  margin: 15px 0 auto;
+  text-align: center;
+}
+
+
+.image-box{
+    display:inline-block;
+  }
+
+
+.gallery img {
+  width: 10%;
+  display: block;
+  margin: 2px;
+  height: 250px;
+  width: 250px;
+  border: .2em solid #393434;
+  border-radius: 2em;
+  box-shadow: 2px 2px 10px 2px black;
+  margin: .5em;
+  padding: .5em
+}
+
+figcaption {
+  text-align: center;
+  margin: 0 auto;
+  color: #393434;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+}
